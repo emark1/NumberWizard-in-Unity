@@ -25,12 +25,12 @@ public class NumberWizard : MonoBehaviour
         maximumGuess = maximumGuess+1;
     }
     public void OnPressHigher() {
-        maximumGuess = guess;
+        maximumGuess = guess +1;
         NextGuess();
     }
 
     public void OnPressLower() {
-        minimumGuess = guess;
+        minimumGuess = guess -1;
         NextGuess();
     }
 }
